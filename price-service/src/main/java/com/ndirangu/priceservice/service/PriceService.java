@@ -10,14 +10,14 @@ import java.util.Map;
 import java.util.concurrent.ThreadLocalRandom;
 import java.util.stream.Collectors;
 import java.util.stream.LongStream;
-
+@Service
 public class PriceService {
     private static final Map<Long, Price> PRICES = LongStream
             .range(1, 20)
             .mapToObj(i -> new Price("USD", randomPrice(), i))
             .collect(Collectors.toMap(Price::getVehicleId, p -> p));
 
-    public static Price getPrice(Long vehicleId) throws PriceException {
+    public  Price getPrice(Long vehicleId) throws PriceException {
 
         if (!PRICES.containsKey(vehicleId)) {
             throw new PriceException("Cannot find price for Vehicle " + vehicleId);
