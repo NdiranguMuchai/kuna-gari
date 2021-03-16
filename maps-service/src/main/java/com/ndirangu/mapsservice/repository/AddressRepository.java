@@ -9,7 +9,7 @@ import java.util.stream.Collectors;
 
 public class AddressRepository {
 
-    static Address getRandom() {
+  public   static Address getRandom() {
 
         Random generator = new Random();
         int randomIndex = generator.nextInt(ADDRESSES.length);
@@ -33,7 +33,7 @@ public class AddressRepository {
         return new Address(streetAndNumber, city, state, zip);
     }
 
-   
+
     private static final String[] ADDRESSES = {
             "777 Brockton Avenue, Abington MA 2351",
             "30 Memorial Drive, Avon MA 2322",
