@@ -6,8 +6,6 @@
 The following  should be installed in your system:
 * [Java 8 or newer](https://www.oracle.com/technetwork/java/javase/downloads/index.html)
 * [Git command line tool](https://help.github.com/articles/set-up-git)
-* [MySQL Server 8](https://dev.mysql.com/downloads/mysql/) (or another standalone SQL instance)
-* Alternately, you may wish to run MySQL in a `Docker` container, using [these instructions](https://hub.docker.com/_/mysql/).
 * Your preferred IDE
     * Eclipse with the m2e plugin. Note: when m2e is available, there is an m2 icon in `Help -> About` dialog. If m2e is
       not there, just follow the install process here: https://www.eclipse.org/m2e/
